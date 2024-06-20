@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    width: 320px;
+}
+
+
+
+.header_nav{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.burger_button{
+    min-width: 40px;
+    background-image: url(/img/ic/icon.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+
+
+
+.circle{
+    height: 40px;
+    min-width: 40px;
+    background-color:#FF3E79 ;
+    border-radius: 20px;
+    border:none;
+}
+
+
+
+.li{
+    list-style-type:none;
+}
+
