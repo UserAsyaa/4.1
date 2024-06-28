@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu</title>
-    <link rel="stylesheet" href="./style.css"> 
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css"> 
 </head>
 <body>
+<div class="title">  
     <header>
         <nav class="header_nav">
             <button class="burger_button circle"></button>
@@ -15,8 +17,8 @@
         </nav>
     </header>
     <main>
+        <img class="strip" src="img/turquoise.png" alt="#">    
         <ul class="menu">
-            <img class="strip" src="img/turquoise.png" alt="#">
             <li class="active"><a href="#">Ремонт техники</a></li>
             <li><a href="#"></a>Услуги и сервисы</li>
             <li><a href="#"></a>Корпоративным клиентам</li>
@@ -27,5 +29,20 @@
             <li><a href="#"></a>Конаткты</li>
         </ul>
     </main>
+    <div class="info">
+        <nav class="contact">
+            <button class="phone_button circle"></button>
+            <button class="chat_button circle"></button>
+            <button class="profile_button circle"></button>
+        </nav>
+        <a class="mail" href="#">mail@cps.com</a>
+        <a class="phone" href="#">8 800 890 8900</a>
+        <ul class="languages">
+            <li><button class="active_lang">RU</button></li>
+            <li><button>EN</button></li>
+            <li><button>CH</button></li>
+        </ul>
+    </div>
+</div>    
 </body>
 </html>

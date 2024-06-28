@@ -5,6 +5,22 @@
 }
 
 
+
+body{
+    font-family: TTLakes, Sans-serif, Arial, serif;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.title{
+    position: fixed;
+    left:0;
+    width: 320px;
+    height: 1024px;
+}
 header{
     width: 320px;
 }
@@ -21,26 +37,192 @@ header{
 
 .burger_button{
     min-width: 40px;
-    background-image: url(/img/ic/icon.png);
+    background-image: url(./img/icon.png);
     background-position: center center;
     background-repeat: no-repeat;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-property: all;
+
+}
+
+
+.logo{
+    margin-right: 80px;
+}
+
+
+.search_button{
+    min-width: 40px;
+    background-image: url(./img/search.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-property: all;
 
 }
 
 
 
-
 .circle{
+    position: relative;
     height: 40px;
     min-width: 40px;
     background-color:#FF3E79 ;
     border-radius: 20px;
     border:none;
+
+
+}
+
+
+main{
+    display: flex;
+    margin-top: 40px;
 }
 
 
 
-.li{
+.strip{
+    width: 4px;
+    height: 32px;
+}
+
+
+
+ul{
+    margin-left: 20px;
     list-style-type:none;
 }
 
+
+
+
+
+li{
+    line-height: 50px;
+}
+
+
+
+
+a{
+    text-decoration: none; 
+    color: #7E7E82;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+
+
+.info{
+    display: flex;
+    flex-flow: column;
+    margin-top: 300px;
+    margin-left: 20px;
+}
+
+
+.phone_button{
+    min-width: 40px;
+    margin-right: 10px;
+    background-image: url(./img/phone.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-property: all;
+
+}
+
+
+.chat_button{
+    min-width: 40px;
+    margin-right: 10px;
+    background-image: url(./img/chat.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-property: all;
+}
+
+
+.profile_button{
+    min-width: 40px;
+    background-image: url(./img/profile.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    transition-property: all;
+
+}
+
+.contact{
+    margin-bottom: 10px;
+
+}
+.mail{
+    color: #1B1C21;
+    font-family: TTLakes Condensed-Medium;
+    font-size: 16px;
+}
+
+.phone{
+    margin-top: 15px;
+    color: #1B1C21;
+    font-family: TTLakes Compressed-Bold;
+    font-size: 24px;
+}
+.languages{
+    margin-top: 10px;
+    margin-left: 0;   
+    display: flex;
+}
+
+
+
+li button{
+    background-color:white;
+    margin-right: 10px;
+    cursor: pointer;
+    border: none;
+    transition-duration: 2s;    ;
+
+}
+
+
+li button:hover{
+    opacity: 0.5;
+
+}
+
+
+
+
+
+
+.phone_button:hover{
+transform: scale(1.2);
+}
+
+.burger_button:hover{
+transform: scale(1.2);
+}
+
+.search_button:hover{
+transform: scale(1.2);
+}
+
+.chat_button:hover{
+transform: scale(1.2);
+}
+
+.profile_button:hover{
+transform: scale(1.2);    
+}
