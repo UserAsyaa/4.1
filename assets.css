@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: TTLakes, Sans-serif, Arial, serif;
+    margin: 0;
+    padding: 0;
+}
+
+.left-aside{
+    width: 320px;
+    height:1024px;
+    position: relative;
+    left: 0;
+    box-shadow:
+            16px 0 52px 0 rgba(14, 24, 80, 0.2),
+            -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    padding: 20px 25px 20px 20px;
+    
+}
+.circle{
+    height: 40px;
+    min-width: 40px;
+    background-color:#FF3E79 ;
+    border-radius: 20px;
+    border:none;
+}
+
+.circle:hover{
+    opacity: 50%;
+    transition: 0.5s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.left-aside__button-logo{
+    display: flex;
+    align-items: center;
+}
+.left_aside--burger-button{
+    background-image: url(./img/icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
+
+}
+.left-aside__logo-img{
+    margin-right: 80px;
+}
+.left_aside--search-button{
+    background-image: url(./img/search.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+.left-aside__nav{
+    margin-top:50px;
+}
+
+.left-aside__nav ul{
+    list-style: none;
+}
+
+.left-aside__nav li{
+    line-height: 50px;
+}
+
+.left-aside__nav-item:hover::before{
+    content:url(./img/turquoise.png);
+    position: fixed;
+    left: 0;
+}
+.left-aside__nav-item:hover{
+   color: #7E7E82;
+   transform: scale(2);
+}
+a{
+    text-decoration: none;
+    color: #1B1C21;
+}
+
+
+
+.left-aside__footer{
+    position: fixed;
+    bottom:0;
+    padding-bottom: 30px;
+}
+.left-aside--phone-button{
+    background-image: url(./img/phone.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.left-aside--chat-button{
+    background-image: url(./img/chat.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.left-aside--profile-button{
+    background-image: url(./img/profile.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.left-aside__footer-button{
+    display: flex;
+    gap: 15px;
+}
+.left-aside__mail{
+    font-size: 16px;
+    color: #1B1C21;
+    font-family: TTLakes Condensed-Medium;
+    font-weight: 400;
+    margin-top: 16px;
+}
+.left-aside__number{
+    font-size: 20px;
+    font-weight: 600;
+    font-family:TTLakes Compressed-Bold;
+    margin-top: 12px;
+}
+
+.left-aside__lang{
+    margin-top: 20px;
+}
+
+.left-aside__lang-btn{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.left-aside__lang-btn:hover{
+    color:#7E7E82
+
+}
+
+
