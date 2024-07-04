@@ -8,10 +8,13 @@ body{
     margin: 0;
     padding: 0;
 }
-
+.left-aside__header{
+    display: flex;
+    align-items: center;
+}
 .left-aside{
-    width: 320px;
-    height:1024px;
+    width:320px;
+    height:100vh;
     position: relative;
     left: 0;
     box-shadow:
@@ -39,7 +42,7 @@ body{
     display: flex;
     align-items: center;
 }
-.left_aside--burger-button{
+.left-aside__burger-button{
     background-image: url(./img/icon.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -47,9 +50,11 @@ body{
 
 }
 .left-aside__logo-img{
-    margin-right: 80px;
+    margin-right: 75px;
+    width:97px;
+    height: 51px;
 }
-.left_aside--search-button{
+.left-aside__search-button{
     background-image: url(./img/search.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -92,17 +97,17 @@ a{
     bottom:0;
     padding-bottom: 30px;
 }
-.left-aside--phone-button{
+.left-aside__phone-button{
     background-image: url(./img/phone.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
-.left-aside--chat-button{
+.left-aside__chat-button{
     background-image: url(./img/chat.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
-.left-aside--profile-button{
+.left-aside__profile-button{
     background-image: url(./img/profile.svg);
     background-position: center;
     background-repeat: no-repeat;
