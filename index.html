@@ -32,9 +32,9 @@
 
         <div class="left-aside__footer">
             <div class="left-aside__footer-button">
-                <button class="left-aside__phone-button circle"></button>
-                <button class="left-aside__chat-button circle"></button>
-                <button class="left-aside__profile-button circle"></button>
+                <button class="left-aside__button--call circle"></button>
+                <button class="left-aside__button--chat circle"></button>
+                <button class="left-aside__button--profile circle"></button>
             </div>
             <div class="left-aside__mail">
                 <a href="mailto:mail@cps.com">mail@cps.com</a>
@@ -49,5 +49,50 @@
             </div>
         </div>
     </div>    
+
+      
+
+    
+    <div id="call-modal" class="call-modal">
+        <div class="call-modal__main">
+            <button class="call-modal__button-close circle"></button>
+            <div class="call-modal__title">
+                <div class="call-modal__line"></div>
+                <h1 class="call-modal__text"> Заказать звонок </h1>
+            </div> 
+            <div class="call-modal__container">
+                <input class="call-modal__input--small" placeholder="Телефон" type="text">
+                <p class="call-modal__personal-data">
+                    Нажимая "отправить", вы даете согласие на <a class="call-modal--color"> обработку персональных данных </a>
+                    и соглашаетесь с нашей <a class="call-modal--color"> политикой конфидециальности </a>
+                </p>
+                <button class="call-modal__button-send" type="submit"> ОТПРАВИТЬ  </button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="feedback-modal">
+        <div class="feedback-modal__main">
+            <button class="feedback-modal__button-close circle"></button>
+            <div class="feedback-modal__title">
+                <div class="feedback-modal__line"></div>
+                <h1 class="feedback-modal__text"> Обратная связь</h1>
+            </div>
+            <div class="feedback-modal__container">
+                <input class="feedback-modal__input--small" placeholder="Имя" type="text">
+                <input class="feedback-modal__input--small" placeholder="Телефон" type="text">
+                <input class="feedback-modal__input--small" placeholder="Электронная почта" type="text">
+                <input class="feedback-modal__input--big"   placeholder="Сообщение" type="text">
+                <p class="feedback-modal__personal-data">
+                    Нажимая "отправить", вы даете согласие на <a href="#" class="call-modal--color"> обработку персональных данных </a>
+                    и соглашаетесь с нашей <a href="#" class="call-modal--color"> политикой конфидециальности </a>
+                </p>
+                <button class="feedback-modal__button-send" type="submit"> ОТПРАВИТЬ </button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body> 
 </html>
