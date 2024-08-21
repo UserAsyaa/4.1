@@ -13,8 +13,8 @@ body{
     align-items: center;
 }
 .left-aside{
-    width:320px;
-    height:100vh;
+    min-width:320px;
+    height:100vh; 
     position: relative;
     left: 0;
     box-shadow:
@@ -97,17 +97,17 @@ a{
     bottom:0;
     padding-bottom: 30px;
 }
-.left-aside__phone-button{
+.left-aside__button--call{
     background-image: url(./img/phone.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
-.left-aside__chat-button{
+.left-aside__button--chat{
     background-image: url(./img/chat.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
-.left-aside__profile-button{
+.left-aside__button--profile{
     background-image: url(./img/profile.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -143,6 +143,313 @@ a{
 .left-aside__lang-btn:hover{
     color:#7E7E82
 
+}
+
+
+
+.call-modal{
+    position: fixed;
+    width: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color:#FFFFFF;
+    transform: translateX(400px);
+    width: 320px;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 2;
+}
+
+.call-modal--open{
+    overflow: visible;
+    opacity: 1;
+}
+
+
+.call-modal__main{
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+    -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    position: relative;
+    height: 100vh;
+    right: 0;
+}
+
+
+
+
+.call-modal__button-close{
+    margin: 20px 0 0 20px;
+    background-image: url(./img/icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.call-modal__title{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    margin-top: 30px;
+}
+.call-modal__line{
+   background-image: url(./img/turquoise.png);
+   background-repeat: no-repeat;
+   width: 3px;
+   height: 40px;
+      
+}
+
+.call-modal__text{
+    font-family: TTLakes;
+    line-height: 32px;
+    font-size: 28px;
+    
+}
+
+.call-modal__container{
+    padding: 30px;
+}
+
+.call-modal__input--small{
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    width: 288px;
+    height: 48px;
+}
+
+.call-modal__input--small::placeholder{
+    font-size: 16px;
+    line-height: 24px;
+    color: #B5B6BC;
+    transform: translateX(10px);
+
+}
+
+
+.call-modal__personal-data{
+    margin-top: 20px;
+    font-family: TTLakes;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0px;
+    color: #7E7E82;
+    
+}
+
+.call-modal__personal-data a{
+    cursor: pointer;
+    color: #FF3E79;
+}
+
+.call-modal__button-send{
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #FF3E79;
+    background-image: url(./img/send.svg);
+    background-repeat: no-repeat;
+    background-position: 115px center;
+    color: white;
+    width: 136px;
+    height: 32px;
+    transform: translate(140px, 15px);
+    font-family: TTLakes;
+    font-size: 12px;
+    cursor: pointer;
+
+}
+
+
+@media (min-width:768px) {
+    .call-modal{
+        margin-left: 100px;
+    }
+    .call-modal__main{
+        width: 440px;
+        position: fixed;
+    }
+    .call-modal__button-close{
+        position: absolute;
+        top:10px;
+        left:-90px;
+    }
+
+    .call-modal__input--small{
+        width: 376px;
+    }
+    .call-modal__button-send{
+        transform: translate(240px, 15px);
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+.feedback-modal{
+    position: fixed;
+    width: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color:#FFFFFF;
+    transform: translateX(400px);
+    width: 320px;
+    overflow: hidden;
+    opacity: 0;
+    z-index: 2;
+}
+
+.feedback-modal--open{
+    overflow: visible;
+    opacity: 1;
+}
+
+
+.feedback-modal__main{
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+    -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    position: relative;
+    height: 100vh;
+    right: 0;
+}
+
+
+.feedback-modal__button-close{
+    margin: 20px 0 0 20px;
+    background-image: url(./img/icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.feedback-modal__title{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    margin-top: 30px;
+}
+
+.feedback-modal__line{
+    background-image: url(./img/turquoise.png);
+    background-repeat: no-repeat;
+    width: 3px;
+    height: 40px;
+       
+ }
+
+ .feedback-modal__text{
+    font-family: TTLakes;
+    line-height: 32px;
+    font-size: 28px;
+    
+}
+
+.feedback-modal__container{
+    display: grid;
+    gap: 15px;
+    padding: 30px;
+}
+
+
+.feedback-modal__input--small{
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    width: 288px;
+    height: 48px;
+}
+
+.feedback-modal__input--big{
+    border: 1px solid #EAEAEA;
+    border-radius: 8px;
+    width: 288px;
+    height: 118px;
+}
+
+
+
+.feedback-modal__input--small::placeholder{
+    font-size: 16px;
+    line-height: 24px;
+    color: #B5B6BC;
+    transform: translateX(10px);
+
+}
+.feedback-modal__input--big::placeholder{
+    font-size: 16px;
+    line-height: 24px;
+    color: #B5B6BC;
+    transform: translate(10px,-35px);
+}
+
+.feedback-modal__personal-data{
+    font-family: TTLakes;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0px;
+    color: #7E7E82;
+    
+}
+
+.feedback-modal__personal-data a{
+    cursor: pointer;
+    color: #FF3E79;
+}
+
+.feedback-modal__button-send{
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    background-color: #FF3E79;
+    background-image: url(./img/send.svg);
+    background-repeat: no-repeat;
+    background-position: 115px center;
+    color: white;
+    width: 136px;
+    height: 32px;
+    transform: translate(160px);
+    font-family: TTLakes;
+    font-size: 12px;
+    top:-5px;
+    cursor: pointer;
+
+}
+
+
+@media (min-width:768px) {
+    .feedback-modal{
+        margin-left: 100px;
+    }
+    .feedback-modal__main{
+        width: 440px;
+        position: fixed;
+    }
+    .feedback-modal__button-close{
+        position: absolute;
+        top:10px;
+        left:-90px;
+    }
+
+    .feedback-modal__input--small{
+        width: 376px;
+    }
+    .feedback-modal__button-send{
+        transform: translate(240px, 15px);
+    }
+
+    .feedback-modal__input--big{
+        border: 1px solid #EAEAEA;
+        border-radius: 8px;
+        width: 376px;
+        height: 118px;
+    }
 }
 
 
