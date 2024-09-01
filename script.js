@@ -5,27 +5,38 @@ const closeCallButton = document.querySelector(".call-modal__button-close");  //
 
 openCallButton.addEventListener("click", function(evt){                    
     evt.preventDefault();
-    callModal.classList.toggle("call-modal--open");                            
+    callModal.classList.toggle("call-modal--open"); 
+                        
 });
 
 
  closeCallButton.addEventListener("click", function(){
     callModal.classList.remove("call-modal--open");
+    
  })             
 
 
 
-const openFeedbackButton = document.querySelector(".left-aside__button--chat");  
-const feedbackModal = document.querySelector(".feedback-modal");                     
-const closeFeedbackButton = document.querySelector(".feedback-modal__button-close");                  
+ const openBurger = document.querySelector('.burger_button');
+ const leftAside = document.querySelector('.left-aside');
+ const closeBurger = document.querySelector('.left-aside__burger-button');
+ const mainContent = document.querySelector('main');
+ const bodyContent = document.querySelector('body');
 
 
-openFeedbackButton.addEventListener("click", function(evt){                    
+ openBurger.addEventListener('click', function(evt){
     evt.preventDefault();
-    feedbackModal.classList.toggle("feedback-modal--open");                            
-});
+    leftAside.classList.toggle('left-aside--open');
+    mainContent.classList.add('call-blur');
+    bodyContent.style.overflow = 'hidden';
+ });
 
 
- closeFeedbackButton.addEventListener("click", function(){
-    feedbackModal.classList.remove("feedback-modal--open");
- })      
+
+closeBurger.addEventListener('click', function(evt){
+    evt.preventDefault();
+    leftAside.classList.remove('left-aside--open');
+    bodyContent.style.overflow = 'auto';
+})
+
+
